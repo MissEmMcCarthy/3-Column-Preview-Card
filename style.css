@@ -15,6 +15,7 @@ body{
     grid-template-areas:
     'one two three';
     max-width: 920px;
+    padding: 4rem 2rem;
     margin: auto;
     grid-auto-columns: 1fr;
 }
@@ -22,8 +23,9 @@ body{
 article{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 3em;
+    position: relative;
 }
 
 h1{
@@ -31,12 +33,14 @@ h1{
     font-size: 2.5em;
     font-family: Big Shoulders Display, Cursive;
     color: hsl(0, 0%, 95%);
+    position: absolute;
+    top: 85px;
 }
 
 p{
     line-height: 1.7em;
-    margin-top: 0;
-    padding-bottom: 5em;
+    margin-top: 8em;
+    padding-bottom: 9em;
 
 }
 
@@ -60,6 +64,8 @@ img{
 }
 
 .button{
+    position: absolute;
+    bottom: 3rem;
     border: 2px solid hsl(0, 0%, 95%);
     background-color: hsl(0, 0%, 95%);
     width: 7em;
@@ -87,7 +93,7 @@ img{
     color: hsl(0, 0%, 95%);
 }
 
-@media (max-width: 879px){
+@media (max-width: 760px){
     .mainwrapper{
         display: grid;
         grid-template-areas:
@@ -100,7 +106,7 @@ img{
     }
     
     p{
-        padding-bottom: 1em;
+        padding-bottom: 5em;
     }
 
     .sedans{
@@ -109,6 +115,10 @@ img{
 
     .luxury{
         border-radius: 0 0 0.5rem 0.5rem;
-    } 
+    }
     
+    .button{
+        position: absolute;
+        bottom: 3rem;
+    }
 }
