@@ -1,0 +1,114 @@
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    font-family: Lexend Deca, Sans Serif;
+}
+
+.mainwrapper{
+    display: grid;
+    grid-template-areas:
+    'one two three';
+    max-width: 920px;
+    margin: auto;
+    grid-auto-columns: 1fr;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-family: Big Shoulders Display, Cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    line-height: 1.7em;
+    margin-top: 0;
+    padding-bottom: 5em;
+
+}
+
+
+img{
+    width:4em;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.button{
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    width: 7em;
+    border-radius: 2em;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sedans a{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs a{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury a{
+    color: hsl(179, 100%, 13%);
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 879px){
+    .mainwrapper{
+        display: grid;
+        grid-template-areas:
+        'one'
+        'two'
+        'three';
+        min-width: 375px;
+        margin: auto;
+        grid-auto-rows: 1fr;
+    }
+    
+    p{
+        padding-bottom: 1em;
+    }
+
+    .sedans{
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .luxury{
+        border-radius: 0 0 0.5rem 0.5rem;
+    } 
+    
+}
