@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Screenshot](images/Desktop.png)
-![Mobile Screenshot]<img src="images/Mobile.png" alt="drawing" width="200"/>
+<img src="images/Mobile.png" alt="drawing" width="200"/>
 
 ## My process
 
